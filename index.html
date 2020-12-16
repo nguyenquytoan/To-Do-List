@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>To do list</title>
+</head>
+<style>
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  
+</style>
+<body class="bg-light">
+    <header id="header" class="bg-primary text-white p-4 mb-3">
+        <div class="form-inline">
+            <input id="search" type="text" style="border-radius:25px" class="form-control col-6 col-md-6 mt-3" placeholder="Search item..."></input>
+        </div>
+        <div class="float-right">by <b><i>1712823-nqtoan</i></b></div>
+        
+    </header>
+    <div class="container">
+        <div class="card card-body">
+            <h2 id="test" class="title container text-center text-primary"><b>MY TO-DO-LIST</b></h2>
+            <ul id="items" class="list-group mt-4">
+                <li class="list-group-item">Learn HTML (default) <span class="float-left delete mr-4 text-danger">x</span> <span class="float-right edit text-primary">...</span></li><li style="display:none" class="list-group-item spec"><input type="text" class="form-control" placeholder="Edit item..."></li>
+                <li class="list-group-item">Learn CSS (default)<span class="float-left delete mr-4 text-danger">x</span> <span class="float-right edit text-primary">...</span></li><li style="display:none" class="list-group-item spec"><input type="text" class="form-control" placeholder="Edit item..."></li>
+                <li class="list-group-item">Learn JavaScript (default)<span class="float-left delete mr-4 text-danger">x</span> <span class="float-right edit text-primary">...</span></li><li style="display:none" class="list-group-item spec"><input type="text" class="form-control" placeholder="Edit item..."></li>
+                <li class="list-group-item">Build my very own website (default)<span class="float-left delete mr-4 text-danger">x</span> <span class="float-right edit text-primary">...</span></li><li style="display:none" class="list-group-item spec"><input type="text" class="form-control" placeholder="Edit item..."></li>
+            </ul>
+
+            <button id="button" type="button" class="btn btn-primary mb-2">
+                <i class="fa fa-plus text-center"> <b>Add item</b></i>
+            </button>
+            
+            <form style="display:none" id="addForm" class="form-inline mt-4">
+                <input style="width:80%" type="text" id="myItem" class="form-control" placeholder="What needs to be done?"></input>
+                <input type="submit" class="btn btn-dark ml-2 float-right"></input>
+            </form>
+            
+
+            
+                
+        </div>
+        
+    </div>
+    
+    
+</body>
+<script src="./source/app.js"></script>
+<script src="./source/init.js"></script>
+</html>
